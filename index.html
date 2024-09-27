@@ -1,0 +1,141 @@
+      <!DOCTYPE html>
+      <html lang="pt-BR">
+        <head>
+          <meta charset="UTF-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <title>TechSolutions - Soluções de TI para o seu negócio</title>
+          <link rel="shortcut icon" href="src/img/favicon.ico" type="image/x-icon">
+          <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+          <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+          <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+          <link rel="stylesheet" href="src/styles.css" />
+          <script src="https://unpkg.com/lucide@latest"></script>
+        </head>
+        <body>
+          <div onclick="abrirModal()" class="btn primary"></div>
+          <div class="container">
+            <header>
+              <a href="#" class="logo">
+                <i data-lucide="laptop"></i>
+                <span>TechSolutions</span>
+              </a>
+              <nav>
+                <a href="#servicos">Serviços</a>
+                <a href="#contato">Contato</a>
+              </nav>
+            </header>
+
+            <main>
+              <section class="hero">
+                <h1>Soluções de TI para o seu negócio</h1>
+                <p>
+                  Transforme sua empresa com nossas soluções tecnológicas de ponta.
+                  Eficiência, segurança e inovação ao seu alcance.
+                </p>
+                <div class="cta-buttons">
+                  <button class="btn primary">Saiba Mais</button>
+                  <button class="btn secondary">Contate-nos</button>
+                </div>
+              </section>
+
+              <section id="servicos" class="services">
+                <h2>Nossos Serviços</h2>
+                <div class="service-grid">
+                  <div class="service-item">
+                    <i data-lucide="server"></i>
+                    <h3>Infraestrutura de TI</h3>
+                    <p>
+                      Soluções robustas e escaláveis para sua infraestrutura
+                      tecnológica.
+                    </p>
+                  </div>
+                  <div class="service-item">
+                    <i data-lucide="shield"></i>
+                    <h3>Segurança Cibernética</h3>
+                    <p>Proteja seus dados e sistemas contra ameaças digitais.</p>
+                  </div>
+                  <div class="service-item">
+                    <i data-lucide="smartphone"></i>
+                    <h3>Desenvolvimento de Software</h3>
+                    <p>  
+                      Criamos soluções personalizadas para impulsionar seu negócio.
+                    </p>
+                  </div>
+                  <div class="service-item">
+                    <i data-lucide="cloud"></i>
+                    <h3>Computação em Nuvem</h3>
+                    <p>
+                      Gerencie seus recursos de TI com flexibilidade e eficiência
+                      através de soluções na nuvem.
+                    </p>
+                  </div>
+                  <div class="service-item">
+                    <i data-lucide="database"></i>
+                    <h3>Gestão de Dados</h3>  
+                    <p>
+                      Organize, analise e aproveite ao máximo os dados do seu negócio
+                      com soluções de Big Data.
+                    </p>
+                  </div>
+                  <div class="service-item">
+                    <i data-lucide="headphones"></i>
+                    <h3>Suporte Técnico</h3>
+                    <p>
+                      Oferecemos suporte especializado para manter seus sistemas e
+                      equipamentos funcionando perfeitamente.
+                    </p>
+                  </div>
+                </div>
+              </section>
+              <section id="contato" class="contact">
+                <h2>Entre em Contato</h2>
+                <div class="contact-grid">
+                  <div class="contact-info">
+                      <div id="check">
+                          <img id="imgContact" src="src/img/CheckList.svg" alt="">
+                        </div>
+                  </div>
+                  <form id="contact-form1" class="contact-form"> 
+                    <input type="text" placeholder="Seu nome" id="nome" required />
+                    <input type="tel" id="phone" name="phone" placeholder="Seu número" required />
+                    <span id="phone-error" style="color: red; display: none;">Número inválido! Deve conter 11 dígitos.</span>
+                    <input type="email" placeholder="Seu e-mail" id="email" required />
+                    <textarea placeholder="Sua mensagem" id="mensagem" required></textarea>
+                    <button type="submit" id="openModal" class="btn primary">Enviar Mensagem</button>
+                  </form>
+                </div>
+                <h3 class="map-title">Onde estamos localizados</h3>
+                <div id="maps">
+                  <div class="map-container">
+                          <iframe
+                            id="maps1"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3547.246206279358!2d-52.04367922377705!3d-27.242806607078183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e37f6a9290e4d7%3A0x6d4410ad68c99e7b!2sR.%20%C3%82ngelo%20Redin%20-%20Ita%C3%ADba%2C%20Conc%C3%B3rdia%20-%20SC%2C%2089700-000!5e0!3m2!1spt-BR!2sbr!4v1727318489841!5m2!1spt-BR!2sbr"
+                            width="100%"
+                            height="100%"
+                            style="border: 0"
+                            allowfullscreen=""
+                            aria-hidden="true"
+                            tabindex=""
+                          ></iframe>
+                   </div>
+                 </div>
+              </section>
+            <footer>
+              <p>&copy; 2024 TechSolutions. Todos os direitos reservados.</p>
+              <nav>
+                <a href="#">Termos de Serviço</a>
+                <a href="#">Política de Privacidade</a>
+              </nav>
+            </footer>
+          </div>
+          </main>
+          <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Obrigado pela sua solicitação!</h2>
+                <p>Em breve entraremos em contato com você para fornecer o orçamento solicitado.</p>
+            </div>
+        </div>
+          <script src="src/scripts.js"></script>
+        </body>
+      </html>
